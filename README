@@ -1,1 +1,32 @@
 this is a nginx module developed by cpp(c++ or cplus cplus)
+
+install:
+
+0.the file path should be changed according to your existing situation.
+
+1.cd ~/nginx-1.8.0
+
+2.cp -rv ~/downloads/nginx-module-developed-by-cpp-master.zip ./
+
+3.unzip nginx-module-developed-by-cpp-master.zip
+
+4.cp -rv nginx-module-developed-by-cpp-master/cpphelloworld/ ./
+
+5. ./configure  --add-module=cpphelloworld
+
+6. cp -rv nginx-module-developed-by-cpp-master/Makefile objs/
+
+7. make
+
+8. sudo make install
+
+9. sudo cp -rv nginx-module-developed-by-cpp-master/nginx.conf /usr/local/nginx/conf/
+
+10. sudo /usr/local/nginx/sbin/nginx
+
+11. curl 127.0.0.1/test
+
+then get the "hello world",it is ok! 
+
+
+

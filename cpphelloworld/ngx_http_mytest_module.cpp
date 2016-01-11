@@ -54,7 +54,7 @@ static ngx_int_t ngx_http_mytest_handler(ngx_http_request_t *r){
         return rc;
     }
     ngx_str_t type = ngx_string("text/plain");
-    string str("hello nima world");
+    string str("hello world");
     //ngx_str_t response = ngx_string("Hello World");
     ngx_str_t response ;
     response.data = (u_char *)str.data();
